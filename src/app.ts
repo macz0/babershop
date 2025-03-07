@@ -5,7 +5,6 @@ import {menu}  from './templates/mainFlow';
 
 const PORT = process.env.PORT ?? 3008;
 
-
 const main = async () => {
 
     const { handleCtx, httpServer } = await createBot({
@@ -19,8 +18,6 @@ const main = async () => {
         })
     })
     httpServer(+PORT)
-
-
 }
 
 main()
